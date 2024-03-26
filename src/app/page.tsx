@@ -1,5 +1,5 @@
 'use client';
-import { faDashboard, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faBoxes, faDashboard, faMoneyBillWave, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 
@@ -60,7 +60,7 @@ const Home = () => {
                   )}
                 </a>
                 <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" onMouseEnter={toggleProductosSubMenu} onMouseLeave={toggleProductosSubMenu}>
-                  Productos
+                <FontAwesomeIcon icon={faBoxes} className="mr-2" /> Productos
                   {showProductosSubMenu && (
                     <div className="absolute bg-gray-800 mt-2 py-2 w-48 shadow-lg rounded-lg">
                       <a href="#" className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Categorias</a>
@@ -71,7 +71,7 @@ const Home = () => {
                   )}
                 </a>
                 <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" onMouseEnter={toggleDomiciliosSubMenu} onMouseLeave={toggleDomiciliosSubMenu}>
-                  Domicilios
+                <FontAwesomeIcon icon={faMoneyBillWave} className="mr-2" /> Domicilios
                   {showDomiciliosSubMenu && (
                     <div className="absolute bg-gray-800 mt-2 py-2 w-48 shadow-lg rounded-lg">
                       <a href="#" className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700">Venta 1</a>
